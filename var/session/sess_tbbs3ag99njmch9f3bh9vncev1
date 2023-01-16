@@ -1,1 +1,0 @@
-core|a:0:{}_session_validator_data|a:6:{s:11:"remote_addr";s:9:"127.0.0.1";s:8:"http_via";s:0:"";s:20:"http_x_forwarded_for";s:0:"";s:15:"http_user_agent";s:18:"Varien_Http_Client";s:23:"session_renew_timestamp";i:1673411963;s:16:"session_lifetime";s:4:"3600";}install|a:0:{}

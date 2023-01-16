@@ -1,0 +1,94 @@
+##
+# Magento stuff.
+##
+downloader/.cache/*
+downloader/cache.cfg
+downloader/connect.cfg
+maintenance.flag
+media/*
+media/**
+var/*
+!var/.htaccess
+
+
+##
+# Misc
+##
+phpinfo.php
+temp
+
+
+##
+# Eclipse IDE
+##
+.buildpath
+.settings/
+.project
+
+
+##
+# Dreamweaver IDE
+##
+_mm
+_notes
+*.LCK
+
+
+##
+# Mac OS junk
+##
+.DS_Store
+
+
+##
+# Windows OS junk
+##
+Thumbs.db
+
+
+##
+# Ultimate_ModuleCreator
+# https://github.com/tzyganu/UMC1.9
+# 
+# Ignore entire extension. This extension is appropriate to exist on 
+# development environment, not so much on production.
+##
+ultimate_modulecreator*
+Ultimate_ModuleCreator*
+app/code/community/Ultimate
+
+##
+# Larger files we typically don't want to store in a git repo
+##
+
+# Photoshop
+*.psd
+
+# Video Files
+*.wmv
+*.mpg
+*.mpeg
+*.mp4
+*.mov
+*.flv
+*.avi
+*.ogv
+*.ogg
+*.webm
+
+# Audio Files
+*.mp3
+*.mp4
+*.flac
+*.wma
+*.wav
+*.ra
+*.ram
+*.rm
+*.mid
+*.ogg
+
+# Archive files
+*.tgz
+*.tar
+*.zip
