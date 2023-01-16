@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<digital>
+    <blocks>
+        <block>
+            <title>Block Header</title>
+            <identifier>block_header</identifier>
+            <content>
+                    <![CDATA[<div class="phone"><label>Call us:</label>123 456 789</div>]]>
+            </content>
+            <is_active>1</is_active>
+        </block> 
+         
+        <block>
+            <title>Banner Left</title>
+            <identifier>banner_left</identifier>
+            <content>
+                   <![CDATA[
+				  <div class="banner-left"><a href="accessories.html"><img alt="" src="{{media url="wysiwyg/banner_left.jpg"}}" /></a></div>
+				   ]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+ 
+        <block>
+            <title>Footer Static Bottom</title>
+            <identifier>footer_static_bottom</identifier>
+            <content>
+                 <![CDATA[<div class="row">
+<div class="col-md-3 col-sm-6 col-sms-6 col-smb-12">
+<div class="f-col f-col1">
+<div class="footer-title">
+<h2>contact us</h2>
+</div>
+<div class="footer-content"><span class="address icon"> 8901 Marmora Road, Glasgow D04 89 GR, New York</span> <span class="phone icon">Telephone: (+1) 866-540-3229<br />Fax: (+1) 866-540-3229</span> <span class="email icon">Email: support@plazathemes.com</span> <span class="website icon">Website: www.plazathemes.com</span></div>
+</div>
+</div>
+<div class="col-md-2 col-sm-6 col-sms-6 col-smb-12">
+<div class="f-col f-col2">
+<div class="footer-title">
+<h2>information</h2>
+</div>
+<div class="footer-content">
+<ul>
+<li class="first"><a href="#">about us</a></li>
+<li><a href="#">Delivery Information</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms Conditions </a></li>
+<li class="last"><a href="#">Manufactures</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-2 col-sm-6 col-sms-6 col-smb-12">
+<div class="f-col f-col3">
+<div class="footer-title">
+<h2>my account</h2>
+</div>
+<div class="footer-content">
+<ul>
+<li class="first"><a href="#">My Account</a></li>
+<li><a href="#">Login</a></li>
+<li><a href="#">My Cart</a></li>
+<li><a href="{#">Wishlist</a></li>
+<li class="last"><a href="#">Checkout</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-2 col-sm-6 col-sms-6 col-smb-12">
+<div class="f-col f-col3">
+<div class="footer-title">
+<h2>extras</h2>
+</div>
+<div class="footer-content">
+<ul>
+<li class="first"><a href="#">Orders Returns</a></li>
+<li><a href="#">Search Terms</a></li>
+<li><a href="#">Advance Search</a></li>
+<li><a href="#">Affiliates</a></li>
+<li class="last"><a href="#">Group Sales</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-sms-6 col-smb-12">
+<div class="f-col f-col4">
+<div class="footer-title">
+<h2>OPENING TIME</h2>
+</div>
+<div class="footer-content">
+<ul>
+<li class="first"><span class="date">Monday - Friday</span> <span class="time">9:00 - 22:00</span></li>
+<li><span class="date">Saturday</span> <span class="time">10:00 - 22:00</span></li>
+<li class="last"><span class="date">Sunday</span> <span class="time">12:00 - 22:00</span></li>
+</ul>
+<div class="payment"><img alt="" src="{{media url="wysiwyg/payment.png"}}" /></div>
+</div>
+</div>
+</div>
+</div>]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Static Contacts</title>
+            <identifier>static_contacts</identifier>
+            <content>
+                   <![CDATA[
+				  <div class="map-contacts"><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6997169.075258479!2d-99.09065332845108!3d31.093428132571923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c19f77b45974b%3A0xb9ec9ba4f647678f!2zRGFsbGFzLCBUZXhhcywgSG9hIEvhu7M!5e0!3m2!1svi!2s!4v1419306684089" height="300" width="100%"></iframe></div>
+				   ]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Banner Static 2</title>
+            <identifier>banner_static2</identifier>
+            <content>
+                   <![CDATA[
+				  <div class="row">
+<div class="col-sm-6 col-sms-12">
+<div class="banner-box banner-box1"><a href="#"><img alt="" src="{{media url="wysiwyg/static_img4.jpg"}}" /></a></div>
+</div>
+<div class="col-sm-6 col-sms-12">
+<div class="banner-box banner-box2"><a href="#"><img alt="" src="{{media url="wysiwyg/static_img5.jpg"}}" /></a></div>
+</div>
+</div>
+				   ]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Banner Right</title>
+            <identifier>banner_right</identifier>
+            <content>
+                   <![CDATA[
+				  <div class="banner-right">
+<div class="box box1">
+<div class="text">
+<div class="text-inner">
+<h2>FREE SHIPPING</h2>
+<p>Free on all products</p>
+</div>
+</div>
+</div>
+<div class="box box2">
+<div class="text">
+<div class="text-inner">
+<h2>free return</h2>
+<p>Return for free within</p>
+</div>
+</div>
+</div>
+<div class="box box3">
+<div class="text">
+<div class="text-inner">
+<h2>Daily updates</h2>
+<p>Update promotion 24/24</p>
+</div>
+</div>
+</div>
+<div class="box box4">
+<div class="text">
+<div class="text-inner">
+<h2>Support 24/7</h2>
+<p>(+1)866-540-3229</p>
+</div>
+</div>
+</div>
+</div>
+				   ]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Menu Links</title>
+            <identifier>pt_menu_links</identifier>
+            <content>
+                   <![CDATA[
+				  <ul>
+<li><a href="{{store direct_url="contacts/"}}">contact us</a></li>
+</ul>
+				   ]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Footer Static Top</title>
+            <identifier>footer_static_top</identifier>
+            <content>
+                   <![CDATA[
+				  <div class="row">
+<div class="col-sm-4 col-sms-12">
+<div class="f-col f-col1">
+<div class="footer-title">
+<h2>about us</h2>
+</div>
+<div class="footer-content"><img alt="" src="{{media url="wysiwyg/about_us.jpg"}}" />
+<div class="box">
+<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus.</p>
+<div class="link-web">
+<ul>
+<li><a class="face" href="#">face</a></li>
+<li><a class="twitter" href="#">twitter</a></li>
+<li><a class="rss" href="#">rss</a></li>
+<li><a class="google" href="#">google</a></li>
+<li><a class="print" href="#">print</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-4 col-sms-12">
+<div class="f-col f-col2">
+<div class="footer-title">
+<h2>RECENT TWEET</h2>
+</div>
+<div class="footer-content">{{block type="core/template" name="lastesttweet" template="magentothem/lastesttweet/lastesttweet.phtml"}}</div>
+</div>
+</div>
+<div class="col-sm-4 col-sms-12">
+<div class="f-col f-col3">
+<div class="footer-title">
+<h2>delivery support</h2>
+</div>
+<div class="footer-content">
+<div class="box box1">
+<div class="box-inner">
+<h3>WORLDWIDE SHIPPING</h3>
+<p>Free Shipping On Order Over $100</p>
+</div>
+</div>
+<div class="box box2">
+<div class="box-inner">
+<h3>ORDER ONLINE SERVICE</h3>
+<p>Call Us Now: (+1)866-540-3229</p>
+</div>
+</div>
+<div class="box box3">
+<div class="box-inner">
+<h3>RETURN 30 DAYS</h3>
+<p>Free return products in 30 days</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+				   ]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		<block>
+            <title>Home4 Banner Static1</title>
+            <identifier>banner_static1</identifier>
+            <content>
+                   <![CDATA[
+				  <div class="banner-box banner-box1"><a href="#"><img alt="" src="{{media url="wysiwyg/home4_static1.jpg"}}" /></a></div>
+<div class="banner-box banner-box2"><a href="#"><img alt="" src="{{media url="wysiwyg/home4_static2.jpg"}}" /></a></div>
+				   ]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+    </blocks>
+
+</digital>
+

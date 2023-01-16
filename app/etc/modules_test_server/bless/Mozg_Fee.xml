@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Mozg. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<config>
+    <modules>
+        <Mozg_Fee>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <!--<Mozg_Braspag/>
+                <Mozg_Itau/>-->
+            </depends>
+        </Mozg_Fee>
+    </modules>
+</config>

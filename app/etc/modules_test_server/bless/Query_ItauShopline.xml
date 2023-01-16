@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Query_ItauShopline>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Query_ItauShopline>
+    </modules>
+</config> 

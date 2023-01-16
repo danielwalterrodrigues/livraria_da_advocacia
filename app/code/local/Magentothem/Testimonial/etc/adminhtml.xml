@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<config>
+	<acl>
+		<resources>
+			<all>
+				<title>Allow Everything</title>
+			</all>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<testimonial translate="title" module="testimonial">
+										<title>Testimonials Permission Setting</title>
+									</testimonial>
+								</children>
+							</config>
+						</children>
+					</system>
+					<magentothem module="testimonial">
+						<title>Magentothem</title>
+						<sort_order>95</sort_order>               
+						<children>
+							<testimonial translate="title" module="testimonial">
+								<title>Testimonial</title>
+								<sort_order>10</sort_order>
+								<children>
+									<testimonial_manage module="testimonial">
+										<title>Manage Testimonials</title>
+										<sort_order>1</sort_order>
+										<action>adminhtml/testimonial/</action>
+									</testimonial_manage>
+									<configuration>
+										<title>Configuration</title>
+										<sort_order>2</sort_order>
+										<action>adminhtml/system_config/edit/section/testimonial</action>
+									</configuration>
+								</children>
+							</testimonial>
+					   </children>
+					</magentothem>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>
+
+

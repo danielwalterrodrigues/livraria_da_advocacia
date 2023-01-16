@@ -1,0 +1,77 @@
+<style>
+.header_sticky {
+  padding: 10px 16px;
+  background: #fff;
+  color: #f1f1f1;
+  border-bottom: 3px solid #ffb900;
+  display:none;
+}
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  display: block !important;
+  
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+.fadeIn {
+-webkit-animation: fadeIn 1s ease-in-out;
+-moz-animation: fadeIn 1s ease-in-out;
+-o-animation: fadeIn 1s ease-in-out;
+animation: fadeIn 1s ease-in-out;
+}
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+</style>
+
+<div class="header_sticky" id="myHeader">
+
+  <div class="box-right">  
+					<?php echo $this->getChildHtml('topLinks') ?>  
+					<div class="top-cart-wrapper">
+						<div class="top-cart-contain">
+							<?php echo $this->getChildHtml('top_cart_mini') ?>
+						</div>
+					</div> 
+				</div>
+</div>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    header.classList.add("fadeIn");
+  } else {
+    header.classList.remove("sticky");
+    header.classList.remove("fadeIn");
+  }
+}
+</script>

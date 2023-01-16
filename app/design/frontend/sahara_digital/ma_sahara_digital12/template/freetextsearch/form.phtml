@@ -1,0 +1,48 @@
+<?php
+	$freetextsearchHelper = Mage::helper('freetextsearch');
+	$catalogSearchHelper =  $this->helper('catalogsearch');
+	$resultNotice = $freetextsearchHelper->getSearchResultNotice();
+	
+?>
+<form id="freetextsearch_form" action="<?php echo $this->getUrl('freetextsearch/search/result') ?>" method="get">
+    <div class="mini-search">
+        <input id="input_search" type="text" name="keyword" value="" class="input-text" maxlength="<?php echo $catalogSearchHelper->getMaxQueryLength();?>" />
+        <i class="fa fa-search" style="margin: 0px 9px 1px 7px;"></i>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+            var searchForm = new Varien.searchForm('freetextsearch_form', 'input_search', '<?php echo $this->__('Search entire store here...') ?>');
+        //]]>
+        </script>
+    </div>
+</form>
+<?php if($freetextsearchHelper->enableQuickSearch()):?>
+<div id="showResults" style="display:none !important; right: auto !important;">
+	<a class="close-dropdown" href="javascript://" onclick="closeDropdown()" title="<?php echo $this->__('Close')?>" alt="<?php echo $this->__('Close')?>">X</a>
+	<div id="resultNotice">
+		<label id="resultLabel">Resultados da busca:</label>
+	</div>	
+	<div id="listResults" style="display:none;">
+	</div>
+</div>
+<script type="text/javascript">
+	var input2 = 'input_search';
+	input2 = input2.replace("%u02DC", "a");
+	var quicksearch = new Quicksearch(
+        '<?php echo $this->getUrl('freetextsearch/search/quicksearch') ?>',
+		'<?php echo $resultNotice ?>',
+		$(input2)
+    );
+	var numberChar = <?php echo Mage::getStoreConfig('freetextsearch/quick_search_setting/number_character')?>;
+	Event.observe('input_search', 'keyup', function(event){
+		var searchBox = $(input2);
+		if(searchBox.value.length >= numberChar){
+			quicksearch.search();
+		}	
+	});
+	function closeDropdown() {
+		var showResults = $('showResults');
+		showResults.style.display = "none";
+	}
+</script>
+<?php endif; ?>

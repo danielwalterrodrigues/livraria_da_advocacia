@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Query_Rede>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Query_Rede>
+    </modules>
+</config>

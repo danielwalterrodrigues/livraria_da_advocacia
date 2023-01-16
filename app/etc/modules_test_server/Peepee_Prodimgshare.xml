@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Peepee_Prodimgshare>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Peepee_Prodimgshare>
+    </modules>
+</config>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * ShopInDev
+ *
+ * @category    ShopInDev
+ * @package     ShopInDev_SuperPageSpeed
+ * @copyright   Copyright (c) 2014 ShopInDev
+ * @license     http://opensource.org/licenses/GPL-3.0 GNU General Public License (GPL)
+ */
+-->
+<config>
+    <modules>
+        <ShopInDev_SuperPageSpeed>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Core/>
+            </depends>
+        </ShopInDev_SuperPageSpeed>
+    </modules>
+</config>

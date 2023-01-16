@@ -1,0 +1,361 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+<style>
+.header_sticky {
+  background: #fff;
+  color: #f1f1f1;
+  border-bottom: 2px solid #ff8300;
+  display:none;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9998;
+  display: block !important;
+  
+}
+.sticky .toplink-contaner {
+	background-color:#ffffff;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+.fadeIn {
+-webkit-animation: fadeIn 1s ease-in-out;
+-moz-animation: fadeIn 1s ease-in-out;
+-o-animation: fadeIn 1s ease-in-out;
+animation: fadeIn 1s ease-in-out;
+}
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+.sticky .header .form-search {
+	margin-left: 150px;
+	top: -20px;
+	z-index:9999;
+}
+.logosticky {
+	padding: 2px 0;
+	width: 152px;
+	height: auto;
+}
+.cat_imagem {
+	width: 40px;
+	height: auto;
+}
+.cat_imagem_top{
+	width:100%;
+	height:40px;
+	text-align:center;
+	display: block;
+
+}
+.cat_imagem_bottom{
+	width: 100%;
+	height: auto;
+	text-align:center;
+}
+.parentMenu {
+	margin-right: 35px !important;
+}
+.pt_custommenu div.pt_menu .parentMenu a::after {
+	display: none;
+}
+.header .form-search input.input-text {
+	width:600px !important;
+}
+#search_mini_form {
+	position: relative !important;
+	top: 0px !important;
+	left:0px !important;
+}
+.pt_custommenu div.pt_menu .parentMenu a, .pt_custommenu div.pt_menu .parentMenu span.block-title
+{
+	font-size:12px !important;
+}
+.toplink-contaner .box-left .phone {
+	font-size: 16px;
+}
+.aviso_cnpj {
+	width:100%;
+	background-color: #ff8300;
+	color: #fff;
+	text-align:center;
+	padding:5px 0;
+	font-size:14px;
+}
+.main-container {
+	border-top:0 !important;
+}
+.product-view .product-img-box .more-views li {
+
+	margin-right:3px;
+	margin-left: 3px;
+}
+
+.inputqty {
+	width:60px;
+	height:auto;
+	font-size: 13px;
+	border:1px solid #ff8300;
+	padding: 2px 4px;
+	float:left;
+	margin: 8px 15px 0 0;
+	text-align:center;
+	font-style: italic;
+}
+.btn_removerprod:before {
+	content: "\f014";
+	font-family: "FontAwesome";
+	font-size:18px;
+	line-height:18px;
+	display:block;
+}
+.busca_header {
+	position:fixed;
+	z-index: 999999;
+	width: 100%;
+	top:90px;
+}
+.busca_header_pos {
+	top:10px !important;
+}
+.box-flex {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+.search_rounded {
+	border: 3px solid #145DA0;
+	border-radius: 24px;
+	background-color: #ffffff;
+	padding: 0 0 0 12px;
+	
+}
+.form-search input.input-text, textarea {
+	width:550px;
+	border: 0px;
+}
+#input_search {
+	width:550px;
+	border:none;
+	margin-left:15px;
+}
+.lupa {
+	margin-right:12px !important;
+}
+</style>
+<!-- // INICIO DO HEADER STICKY // -->
+
+<div class="busca_header box-flex" id="buscatop">
+	<div class="search_rounded">
+		<?php echo $this->getChildHtml('topSearch') ?>
+	</div>
+</div>
+
+
+<div class="header_sticky" id="myHeader">
+<?php
+$logosticky = Mage::getBaseUrl( Mage_Core_Model_Store::URL_TYPE_WEB, true ); ?>
+<div class="header-container">
+	<div class="toplink-contaner"> 
+		<div class="container">
+			<div class="top-link">
+				<div class="box-left">
+				<a href="<?php echo $this->getUrl('') ?>" class="logo"><img src="<?php echo $logosticky ?>media/logo_sticky.png" class="logosticky" /></a>
+				</div>
+
+				<div class="box-right">  
+					<div class="top-cart-wrapper">
+						<div class="top-cart-contain">
+							<?php echo $this->getChildHtml('top_cart_mini') ?>
+						</div>
+					</div> 
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header"> 
+		<div class="container">
+						
+		</div>
+	</div>
+</div>
+</div>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var busca = document.getElementById("buscatop");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    header.classList.add("fadeIn");
+    busca.classList.add("busca_header_pos");
+    busca.classList.add("fadeIn");
+  } else {
+    header.classList.remove("sticky");
+    header.classList.remove("fadeIn");
+    busca.classList.remove("busca_header_pos");
+    busca.classList.remove("fadeIn");
+  }
+}
+</script>
+
+<?php // echo $this->getLayout()->createBlock('core/template')->setTemplate('page/html/header_sticky.phtml')->toHtml(); ?>
+
+<!-- // FINAL DO HEADER STICKY // -->
+
+<div id ="wrapper">
+    <div id="loading" style ="position: fixed;top: 50%;left: 50%;margin-top: -50px;"></div>
+</div>
+<div class="header-container">
+	<div class="toplink-contaner"> 
+		<div class="container">
+			<div class="top-link">
+				<div class="box-left"> 
+					<div class="language-currency"> 
+						<?php echo $this->getChildHtml('store_language') ?>
+						<?php echo $this->getChildHtml('currency_top') ?>
+					</div>
+					<p class="welcome-msg"><?php echo $this->getWelcome() ?> <?php echo $this->getAdditionalHtml() ?></p> 
+					 <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('block_header')->toHtml() ?> 
+				</div>
+				 
+				<div class="box-right">  
+					<?php echo $this->getChildHtml('topLinks') ?>  
+					<div class="top-cart-wrapper">
+						<div class="top-cart-contain">
+							<?php echo $this->getChildHtml('top_cart_mini') ?>
+						</div>
+					</div> 
+				</div>
+			</div>
+			
+		</div>
+	</div> 
+	<div class="header"> 
+		<div class="container">
+			<div class="header-content">  
+				<div class="logo-container">
+					<?php if ($this->getIsHomePage()): ?>
+					<h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+					<?php else: ?>
+						<a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+					<?php endif ?>
+					<div class="quick-access">
+						<?php // echo $this->getChildHtml('topSearch') ?>
+					</div> 
+
+				</div> 
+				 
+				<div class="header-bottom">
+					<?php $mediaUrl = Mage::getBaseUrl('media'); ?>
+					<a href="https://wa.me/551120927777" target=_blank><img src="<?php echo $mediaUrl ?>whatsapp.png"></a>
+				</div>   
+			</div>    
+		</div>
+
+<style>
+	.ehTOPInformática {
+        
+    }
+</style>
+
+		<?php echo $this->getChildHtml('topMenu') ?> 
+		
+	</div>
+		
+    <?php
+  // echo $this->getLayout()->createBlock('cms/block')->setBlockId('faixa_abaixo_menu')->toHtml(); 
+?>
+<!-- 
+<style>
+	.coluna_abaixomenu {
+		align: center;
+	}
+</style>
+
+<div class="container" style="background-color: #ff8300;">
+    <div class="row">
+        <div class="col-xs-2" style="coluna_abaixomenu">
+            <p>algo aqui 1</p>
+        </div>
+        <div class="col-xs-2" style="coluna_abaixomenu">
+            <p>algo aqui 1</p>
+        </div>
+        <div class="col-xs-2" style="coluna_abaixomenu">
+            <p>algo aqui 1</p>
+        </div>
+        <div class="col-xs-2" style="coluna_abaixomenu">
+            <p>algo aqui 1</p>
+        </div>
+        <div class="col-xs-2" style="coluna_abaixomenu">
+            <p>algo aqui 2</p>
+        </div>
+        <div class="col-xs-2" style="coluna_abaixomenu">
+            <p>algo aqui 3</p>
+        </div>
+    </div>
+</div>
+-->
+<!-- ////////// -->
+
+	<?php echo $this->getChildHtml('topContainer'); ?> 
+</div>
+ 
+
+
+ 

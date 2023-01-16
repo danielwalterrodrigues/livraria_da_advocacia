@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<digital>
+    <resources>
+        <resource>
+            <title>Sahara Digital12 Home Page</title>
+            <identifier>sahara_digital12</identifier>
+            <root_template>two_columns_right</root_template>
+            <content><![CDATA[<div class="home-content">{{block type="featuredproductslider/featuredproductslider" name="featuredproductslider" template="magentothem/featuredproductslider/featuredproductslider.phtml"}}
+<div class="banner-static2">{{block type="cms/block" block_id="banner_static2"}}</div>
+</div>]]></content>
+            <sort_order>1</sort_order>
+            <is_active>1</is_active>
+        </resource>
+    </resources>
+	<resources>
+        <resource>
+            <title>404 Not Found</title>
+            <identifier>no-route1</identifier>
+            <root_template>one_column</root_template>
+				<content><![CDATA[
+<div class="page-not-found">
+<div class="page-title">
+<h1>Not Found !</h1>
+</div>
+<div class="page-content">
+<div class="des-container">
+<p>You know what that means? It means the page you're looking for isn't here.</p>
+<h1 class="back-home"><a href="{{store url=""}}">back to home</a></h1>
+</div>
+</div>
+</div>
+				]]></content>
+				<sort_order>1</sort_order>
+            <is_active>1</is_active>
+        </resource>
+    </resources>
+</digital>
