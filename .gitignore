@@ -5,10 +5,11 @@ downloader/.cache/*
 downloader/cache.cfg
 downloader/connect.cfg
 maintenance.flag
-media/*
+media/catalog/*
 media/**
 var/*
 !var/.htaccess
+!var/resource_config.json
 
 
 ##
