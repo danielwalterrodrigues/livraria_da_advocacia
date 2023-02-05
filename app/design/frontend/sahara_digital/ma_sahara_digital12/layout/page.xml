@@ -66,6 +66,7 @@ Default layout, loads most of the pages
                 <action method="addCss"><stylesheet>css/bootstrap.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/bootstrap-theme.css</stylesheet></action>
 
+                <action method="addCss"><stylesheet>css/livrariadaadv.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/styles.css</stylesheet></action>
 				<action method="addCss"><stylesheet>magentothem/css/owl.carousel.css</stylesheet></action>
 				<action method="addCss"><stylesheet>css/font-awesome.css</stylesheet></action>

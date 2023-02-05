@@ -27,13 +27,13 @@
 /* @var $catalogSearchHelper Mage_Catalogsearch_Helper_Data */
 $catalogSearchHelper =  $this->helper('catalogsearch');
 ?>
-<?php $lupa = Mage::getBaseUrl(); ?>
+<?php $lupa = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA); ?>
 <form id="search_mini_form" action="<?php echo $catalogSearchHelper->getResultUrl() ?>" method="get">
     <div class="form-search">
-        <input id="input-search" type="text" name="<?php echo $catalogSearchHelper->getQueryParamName() ?>" value="<?php echo $catalogSearchHelper->getEscapedQueryText() ?>" class="input-text" maxlength="<?php echo $catalogSearchHelper->getMaxQueryLength();?>" placeholder="Digite aqui para buscar..." />
+        <input id="input-search" type="text" name="<?php echo $catalogSearchHelper->getQueryParamName() ?>" value="<?php echo $catalogSearchHelper->getEscapedQueryText() ?>" class="input-text" maxlength="<?php echo $catalogSearchHelper->getMaxQueryLength();?>" placeholder="Digite aqui o que procura..." />
 		<div class="loading_image_search"></div>
         <button type="submit" title="<?php echo $this->__('Search') ?>" class="button lupa">
-            <img src="<?php echo $lupa ?>media/lupa_busca.png">
+            <img src="<?php echo $lupa ?>lupa_busca.png">
         </button>
         <div id="search_autocomplete" class="search-autocomplete"></div>
         <script type="text/javascript">
