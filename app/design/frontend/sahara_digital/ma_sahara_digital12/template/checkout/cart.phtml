@@ -36,7 +36,6 @@
     <div class="page-title title-buttons">
         <h1><?php echo $this->__('Shopping Cart') ?></h1>
     </div>
-    <div class="aviso_cnpj"><?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('block_header')->toHtml() ?> </div>
     <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
     <?php echo $this->getChildHtml('form_before') ?>
     <form action="<?php echo $this->getUrl('checkout/cart/updatePost') ?>" method="post">
